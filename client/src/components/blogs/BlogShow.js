@@ -8,9 +8,9 @@ class BlogShow extends Component {
   }
 
   renderImage(){
-    const { imageUrl } = this.props.blog;
+    const { imageUrl, title } = this.props.blog;
     if(imageUrl) {
-      return <img style={{maxWidth: '100%'}} src={`https://s3-us-west-2.amazonaws.com/practice-blog-bucket/${imageUrl}`}/>;
+      return <img alt={title} style={{maxWidth: '100%'}} src={`https://s3-us-west-2.amazonaws.com/practice-blog-bucket/${imageUrl}`}/>;
     }
   }
 

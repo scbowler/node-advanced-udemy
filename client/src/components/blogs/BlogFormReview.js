@@ -61,10 +61,7 @@ class BlogFormReview extends Component {
 
   render() {
     const { src } = this.state;
-
-    console.log('PROPS:', this.props);
-
-
+    
     return (
       <form onSubmit={this.onSubmit.bind(this)}>
         <h5>Please confirm your entries</h5>
